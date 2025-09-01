@@ -1,2 +1,11 @@
-<p>binding working!</p>
-<h1>{{ titre }}</h1>
+<!-- Utilisation du data binding de type Interpolation 
+ qui permet d’afficher une valeur dans le template.
+  Pour cela, on utilise la syntaxe {{ }}-->
+<h1>String Interpolation</h1>
+<h2>{{ titre }}</h2>
+
+<!-- Le property binding permet de lier une propriété d’un élément HTML à une valeur dans le composant. 
+ Pour cela, on utilise la syntaxe [ ]. -->
+
+<h1>Property Binding</h1>
+<button [disabled]="status">Cliquez ici</button>
