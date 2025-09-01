@@ -9,3 +9,14 @@
 
 <h1>Property Binding</h1>
 <button [disabled]="status">Cliquez ici</button>
+
+<!-- Le event binding permet de lier un événement d’un élément HTML à une méthode dans le composant. 
+ Pour cela, on utilise la syntaxe ( ). -->
+<h1>Event Binding</h1>
+<button (click)="changerTitre()">Changer le titre</button>
+
+<!-- Le two-way binding est une fonctionnalité qui crée une connexion bidirectionnelle entre un élément HTML et un composant. Cela signifie que toute modification apportée à l’élément est reflétée dans le composant, et vice-versa.
+  Pour réaliser cette liaison, on utilise la syntaxe [( )] -->
+<h1>Two-way Binding</h1>
+<input type="text" [(ngModel)]="nom" />
+<p>Bonjour {{ nom }}</p>

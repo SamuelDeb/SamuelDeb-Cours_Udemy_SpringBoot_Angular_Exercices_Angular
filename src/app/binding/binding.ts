@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-binding',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './binding.html',
   styles: ``
 })
@@ -13,9 +14,15 @@ export class Binding implements OnInit {
 
   status : boolean = true;
 
+  nom : string = 'Samuel Debaer';
+
   constructor() { }
 
   ngOnInit(): void {
   }
   
+  changerTitre() {
+    this.titre = 'Titre modifié';
+
+}
 }
